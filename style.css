@@ -6,6 +6,14 @@ body{
     margin:0;
     width:100%;
 }
+.container{
+    width: 83%;
+    margin: auto;
+}
+.header
+{
+    position:relative;
+}
 .image-container
 {
     position: relative;
@@ -17,4 +25,44 @@ body{
 width: 100%;
 height: 100%;
 object-fit: cover;
+}
+.nav
+{
+    position:absolute;
+    top: 0;
+    width: 100%;
+    color: white;
+    font-weight: 550;
+}
+.container-nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logocontainer
+{
+    display: flex;
+    align-items: center;
+}
+.logocontainer p
+{
+    padding: 5px;
+}
+.nav ul
+{
+list-style: none;
+display: flex;
+}
+.nav ul li
+{
+    padding: 0px 3px;
+    margin-right: 25px;
+    font-size: 20px;
+    font-weight: 100;
+}
+.nav ul li a
+{
+    color: inherit;
+    text-decoration: none;
 }
