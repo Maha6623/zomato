@@ -13,26 +13,34 @@ body{
 .header
 {
     position:relative;
+    height: 420px;
 }
 .image-container
 {
     position: relative;
     width: 100%;
     height: 420px;
+    overflow: hidden;
 }
 .image-container img
 {
 width: 100%;
 height: 100%;
 object-fit: cover;
+transform: scale(1.1);
 }
-.nav
+.header-body-section
 {
     position:absolute;
     top: 0;
     width: 100%;
     color: white;
+}
+.nav
+{
+    
     font-weight: 550;
+    height: 50px;
 }
 .container-nav
 {
@@ -65,4 +73,34 @@ display: flex;
 {
     color: inherit;
     text-decoration: none;
+}
+.zomato-logo
+{
+    width: 300px;
+}
+.container-header-body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+    flex-direction: column;
+}
+.header-body-content
+{
+position: relative;
+top: -50px;
+}
+.header-body-section-discover
+{
+    font-size: 40px;
+    margin: 25px 0px;
+}
+.search-container
+{
+    background-color: white;
+    width: 100%;
+    height: 55px;
+    max-width: 760px;
+    border-radius: 10px;
 }
