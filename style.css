@@ -141,3 +141,41 @@ color: black;
     padding: 5px 10px;
     outline: none;
 }
+/**section1 feature***/
+.section-1
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.container-feature
+{
+    display: flex;
+    justify-content: space-between;
+}
+.features
+{
+    overflow: hidden;
+    border-radius: 20px;
+    border: 0.1px solid rgb(214, 213, 213);
+}
+.feature-image
+{
+    width: 360px;
+    height: 200px;
+    overflow: hidden;
+}
+.feature-image img
+{
+width: 100%;
+background-position:100px;
+}
+.features h3,
+.features p{
+    padding-left: 20px;
+}
+.features:hover
+{
+    transition: transform 0.7s;
+    transform: scale(1.04);
+    cursor:pointer;
+}
