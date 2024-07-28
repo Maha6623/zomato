@@ -1,21 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+      <title>HTML Login Form</title>
+      <link rel="stylesheet" href="./style1.css">
 </head>
+
 <body>
-    <body>
-        <h1>Login Example</h1>
-        <form>
-        <p>
-        <input type="text"size="10"name="username"/><br/>
-        Username</br>
-        <input type="text"size="10"name="password"/><br/>
-        Password</br>
-        <input type="submit"value="SUBMIT"name="submitbutton"/>
-        </p>
-        </form>
+      <div class="main">
+            <h1>Behind the Wheel!</h1>
+            <h3>Enter your login credentials</h3>
+            <form action="">
+                  <label for="first">
+                        Username:
+                  </label>
+                  <input type="text" 
+                         id="first" 
+                         name="first" 
+                         placeholder="Enter your Username" required>
+
+                  <label for="password">
+                        Password:
+                  </label>
+                  <input type="password"
+                         id="password" 
+                         name="password"
+                         placeholder="Enter your Password" required>
+
+                  <div class="wrap">
+                        <button type="submit"
+                                onclick="solve()">
+                              Submit
+                        </button>
+                  </div>
+            </form>
+            <p>Not registered?
+                  <a href="#"
+                     style="text-decoration: none;">
+                        Create an account
+                  </a>
+            </p>
+      </div>
 </body>
+
 </html>
