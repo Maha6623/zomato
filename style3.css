@@ -1,6 +1,11 @@
+.section-1-body
+{
+    display: flex;
+
+}
 .section-1-left h1{
     font-size: 40px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 .section-1-left p{
     font-size: 20px;
@@ -11,7 +16,7 @@
 .section-1-top{
     display:flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 .section-1-right
 {
@@ -20,7 +25,7 @@
 }
 .section-1-item
 {
-    max-width: 267px;
+    max-width: 250px;
     box-shadow: 2px 2px 5px black;
     border-radius: 5px;
     height: 320px;
@@ -57,9 +62,4 @@
 .section-1-image-describition p:nth :nth-child(2)
 {
     font-size: 18px;
-}
-.section-1-body
-{
-    display: flex;
-
 }
