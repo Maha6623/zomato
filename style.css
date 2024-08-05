@@ -1,5 +1,5 @@
 body{
-    background-image: url(https://t4.ftcdn.net/jpg/02/84/46/89/360_F_284468940_1bg6BwgOfjCnE3W0wkMVMVqddJgtMynE.jpg);
+    background-image: url(https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg);
 	background-size:cover;
     overflow: hidden;
 }
@@ -58,7 +58,7 @@ display: flex;
 div.x{
     
     text-align:center;
-    color:white;
+    color:black;
     width: 300px;
     height:250px;
     font-size: 40px;
@@ -89,6 +89,7 @@ div.x2{
 div.y button
 {
     background-color: yellow;
+    border-radius: 40%;
 }
 div.y a
 {
