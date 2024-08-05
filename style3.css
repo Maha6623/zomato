@@ -1,111 +1,341 @@
-*
-{
-    margin:0;
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+    margin: 0;
     padding: 0;
-    box-sizing: none;
-    text-decoration: none;
-    list-style: none;
-}
-html {
-    font-family: 'open sans' , sans-serif;
-    scroll-behavior: smooth;
-}
-img{
-    width: 100%;
-}
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-    width: 100%;
-    height: 70px;
-    position: absolute;
-    z-index: 1;
-}
-header .logo a{
-    font-size: 30px;
-    color: white;
-    padding: 15px 30px;
-}
-header .logo a span {
-    color:orange;
-}
-header nav ul{
-    display: flex;
-}
-header nav ul li a{
-    margin: 5px 20px;
-    font-size: 18px;
-    color: white;
-    padding: 10px 10px;
-}
-header nav ul li a:hover{
-    border-bottom:2px solid white;
-}
-/* content */
-.content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(to bottom right,rgba(96,76,76,.6), rgba(96,76,76,.6)),url("https://www.cbc.ca/stevenandchris/content/images/_full/light-desserts-lead-image-all.jpg");
-background-position: center bottom;
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-}
-.content h2{
-    font-size: 32px;
-    padding: 5px;
-    color: white;
-}
-.content p{
-    font-size: 22px;
-    color:white;
+    box-sizing: border-box;
+    font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight:500;
+        font-style: normal;
+        
 }
 
-/*menu*/
-.menu{
-    background-color: #333333;
+
+img{
     width: 100%;
+    height: 100%;
 }
-.menu menu-header{
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    justify-content: space-between;
+.logo
+{
+    width: 100px;
+    padding-top: 50px;
+
+    
+    
 }
-.menu-header h3{
-    color: orange;
-    padding: 10px 30px;
+header
+{
+    min-height: 100vh;
+    min-width: 100vh;
+   overflow: auto;
+  background-image:url(./images/peakpx.jpg);
+  background-size: cover;
+  overflow:auto;
+  
+  
+ 
 }
-.menu-header h4{
-    color:orange;
-    padding: 10px 20px;
+.header-content
+{
+width: 95%;
+margin: auto;
+
+height: 20vh;
+
 }
-.menu .menu-content{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 50px 0;
-    flex-wrap: wrap;
-    background-color: #404040;
+
+
+nav
+{
+
+  
+   font-size: 30px; 
+   
 }
-.menu .menu-content .hot-coffees {
-    width: 250px;
+
+ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 30px;
+    
 }
-.menu .menu-content .hot-coffees .hot-coffees-image img{
-    border-radius: 50%;
+
+
+
+ul a
+{
+    
+    color:#ecca0a;
+    text-decoration: none;
+    
 }
-.menu .menu-content .hot-coffees-body{
+ul li::after
+{
+    content: '';
+    display: block;
+    background-color:#a4922de2 ;
+    height: 2px;
+    transform: scaleX(0);
+    transition: 500ms;
+}
+ul li:hover::after
+{
+   transform: scaleX(1);
+}
+
+
+
+.set
+{
+    
+    padding:200px;
+    font-size: 30px;
+    width: 0%;
+}
+.fresh
+{
+    color: white;
+}
+.deli
+{
+    color: red;
+    
+}
+
+/* ice */
+.cakes
+{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap:20px ;
+    grid-row-gap: 30px;
+}
+.item img
+{
+width: 100%;
+height: 300px;
+border: none;
+border-radius: 5px;
+object-fit: cover;
+cursor: pointer;
+transition: 0.2s ease;
+}
+.item img:hover
+{
+    transform: scale(1.04);
+}
+.item h4{
+    padding: 5px;
     text-align: center;
-    margin-top: 10px;
 }
-.menu .menu-content .hot-coffees-body h2{
-    color:orange;
+.item button
+{
+    padding: 5px 30px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: rgba(255, 217, 0, 0.901);
+    color: rgb(16, 3, 113);
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s ease;
+
+}
+.item button:hover
+{
+    transform: scale(1.04);
+}
+@media  screen and (max-width: 1000px){
+    .cakes{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media  screen and (max-width: 600px){
+    .cakes{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* pastry */
+.pastry
+{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap:20px ;
+    grid-row-gap: 30px;
+    
+}
+.item img
+{
+width: 100%;
+height: 300px;
+border: none;
+border-radius: 5px;
+object-fit: cover;
+cursor: pointer;
+transition: 0.2s ease;
+}
+.item img:hover
+{
+    transform: scale(1.04);
+}
+.item h4{
+    padding: 5px;
+    text-align: center;
+}
+.item button
+{
+    padding: 5px 30px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: rgba(255, 217, 0, 0.901);
+    color: rgb(16, 3, 113);
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s ease;
+
+}
+.item button:hover
+{
+    transform: scale(1.04);
+}
+@media  screen and (max-width: 1000px){
+    .pastry{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media  screen and (max-width: 600px){
+    .pastry{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* pudding */
+.pudding
+{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap:20px ;
+    grid-row-gap: 30px;
+    
+}
+.item img
+{
+width: 100%;
+height: 300px;
+border: none;
+border-radius: 5px;
+object-fit: cover;
+cursor: pointer;
+transition: 0.2s ease;
+}
+.item img:hover
+{
+    transform: scale(1.04);
+}
+.item h4{
+    padding: 5px;
+    text-align: center;
+}
+.item button
+{
+    padding: 5px 30px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: rgba(255, 217, 0, 0.901);
+    color: rgb(16, 3, 113);
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s ease;
+
+}
+.item button:hover
+{
+    transform: scale(1.04);
+}
+@media  screen and (max-width: 1000px){
+    .pudding{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media  screen and (max-width: 600px){
+    .pudding{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+section {
+    margin-top: 2rem;
+}
+    
+/* ice */
+.ice
+{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap:20px ;
+    grid-row-gap: 30px;
+    
+}
+.item img
+{
+width: 100%;
+height: 300px;
+border: none;
+border-radius: 5px;
+object-fit: cover;
+cursor: pointer;
+transition: 0.2s ease;
+}
+.item img:hover
+{
+    transform: scale(1.04);
+}
+.item h4{
+    padding: 5px;
+    text-align: center;
+}
+.item button
+{
+    padding: 5px 30px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: rgba(255, 217, 0, 0.901);
+    color: rgb(16, 3, 113);
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s ease;
+
+}
+.item button:hover
+{
+    transform: scale(1.04);
+}
+@media  screen and (max-width: 1000px){
+    .ice{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media  screen and (max-width: 600px){
+    .ice{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.top {
+    text-align: center;
+   margin-top: 1.5rem;
+   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+   height: 3rem;
+   color: #fff;
+   font-weight: 500;
 }
