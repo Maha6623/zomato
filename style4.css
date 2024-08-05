@@ -194,7 +194,7 @@ header nav ul li a:hover {
 }
 #menu-row{
     display: flex;
-    padding: 0 100px 0 100px;
+    /*padding: 0 100px 0 100px;*/
 }
 #menu-col{
     box-shadow: 2px 2px 2px #bbb;
@@ -225,12 +225,15 @@ header nav ul li a:hover {
     object-fit: cover;
 }
 .box{
-    display: flex;
-    flex-direction: column;
+    
     align-items: center;
     text-align: center;
     margin: 5px;
+    cursor: pointer;
 }
-
+.align {
+    display: flex;
+    justify-content: space-around;
+}
 
 
